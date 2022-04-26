@@ -61,23 +61,23 @@
 //}
 
 //暴力求解法
-void left_move1(char* arr, int k)
-{
-	assert(arr);
-	int i = 0;
-	int len = strlen(arr);
-	for (i = 0; i < k; i++)
-	{
-		//左旋一个字符
-		char tmp = *arr;
-		int j = 0;
-		for (j = 0; j < len-1; j++)
-		{
-			*(arr + j) = *(arr + j + 1);
-		}
-		*(arr + len - 1) = tmp;
-	}
-}
+//void left_move1(char* arr, int k)
+//{
+//	assert(arr);
+//	int i = 0;
+//	int len = strlen(arr);
+//	for (i = 0; i < k; i++)
+//	{
+//		//左旋一个字符
+//		char tmp = *arr;
+//		int j = 0;
+//		for (j = 0; j < len-1; j++)
+//		{
+//			*(arr + j) = *(arr + j + 1);
+//		}
+//		*(arr + len - 1) = tmp;
+//	}
+//}
 
 //三部翻转法
 //abcdef
@@ -87,7 +87,7 @@ void reverse(char* left, char* right)
 {
 	assert(left != NULL);
 	assert(right != NULL);
-	while (left>right)
+	while (left<right)
 	{
 		char tmp = *left;
 		*left = *right;
@@ -96,20 +96,62 @@ void reverse(char* left, char* right)
 		right--;
 	}
 }
-
+//
 void left_move2(char* arr, int k)
 {
+  
 	assert(arr);
 	int len = strlen(arr);
+	assert(k <= len);
 	reverse(arr,arr+k-1);//左边
 	reverse(arr+k,arr+len-1);//右边
 	reverse(arr,arr+len-1);//全部
 }
+//
+//int main()
+//{
+//	char arr[] = "abcdef";
+//	left_move2(arr, 2);
+//	printf("%s\n", arr);
+//	return 0;
+//}
+
+//写一个函数，判断字符串是否为另一个字符串旋转后的字符串
+int is_left_move(char* s1, char* s2)
+{
+	int i = 0;
+	int len = strlen(s1);
+	for (i = 0; i < len; i++)
+	{
+		left_move2(s1, 1);
+		int ret = strcmp(s1, s2);
+		if (ret == 0)
+			return 1;
+	}
+	return 0;
+}
 
 int main()
 {
-	char arr[] = "abcdef";
-	left_move2(arr, 2);
-	printf("%s\n", arr);
+	char arr1[] = "abcdef";
+	char arr2[] = "cdefab";
+	int ret = is_left_move(arr1, arr2);
+	if (ret == 1)
+	{
+		printf("Yes\n");
+	}
+	else
+	{
+		printf("No\n");
+	}
 	return 0;
 }
+
+
+
+
+
+
+
+
+

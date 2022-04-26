@@ -1,4 +1,4 @@
 ﻿  text.c
-D:\bc\text（指针题目）_4_25\text（指针题目）_4_25\text.c(68,18): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
-D:\bc\text（指针题目）_4_25\text（指针题目）_4_25\text.c(103,18): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+D:\bc\text（指针题目）_4_25\text（指针题目）_4_25\text.c(104,18): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+D:\bc\text（指针题目）_4_25\text（指针题目）_4_25\text.c(123,18): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
   text（指针题目）_4_25.vcxproj -> D:\bc\text（指针题目）_4_25\x64\Debug\text（指针题目）_4_25.exe
