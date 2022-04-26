@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "game2(扫雷）_4_3", "game2(扫雷）_4_3\game2(扫雷）_4_3.vcxproj", "{2BAA7237-70BF-487D-8B4F-EE782D5A6A82}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2BAA7237-70BF-487D-8B4F-EE782D5A6A82}.Debug|x64.ActiveCfg = Debug|x64
+		{2BAA7237-70BF-487D-8B4F-EE782D5A6A82}.Debug|x64.Build.0 = Debug|x64
+		{2BAA7237-70BF-487D-8B4F-EE782D5A6A82}.Debug|x86.ActiveCfg = Debug|Win32
+		{2BAA7237-70BF-487D-8B4F-EE782D5A6A82}.Debug|x86.Build.0 = Debug|Win32
+		{2BAA7237-70BF-487D-8B4F-EE782D5A6A82}.Release|x64.ActiveCfg = Release|x64
+		{2BAA7237-70BF-487D-8B4F-EE782D5A6A82}.Release|x64.Build.0 = Release|x64
+		{2BAA7237-70BF-487D-8B4F-EE782D5A6A82}.Release|x86.ActiveCfg = Release|Win32
+		{2BAA7237-70BF-487D-8B4F-EE782D5A6A82}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {409A544A-0011-43E4-944C-EADB5C70CE19}
+	EndGlobalSection
+EndGlobal
