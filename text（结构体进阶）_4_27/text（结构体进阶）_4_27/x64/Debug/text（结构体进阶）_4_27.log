@@ -1,0 +1,4 @@
+﻿  text.c
+D:\bc\text（结构体进阶）_4_27\text（结构体进阶）_4_27\text.c(138,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
+D:\bc\text（结构体进阶）_4_27\text（结构体进阶）_4_27\text.c(138,9): message : 请考虑在格式字符串中使用“%zd”
+  text（结构体进阶）_4_27.vcxproj -> D:\bc\text（结构体进阶）_4_27\x64\Debug\text（结构体进阶）_4_27.exe

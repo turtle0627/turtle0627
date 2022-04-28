@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "text（结构体进阶）_4_27", "text（结构体进阶）_4_27\text（结构体进阶）_4_27.vcxproj", "{205F4257-D442-4EC6-A464-B13C8C5F95EA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{205F4257-D442-4EC6-A464-B13C8C5F95EA}.Debug|x64.ActiveCfg = Debug|x64
+		{205F4257-D442-4EC6-A464-B13C8C5F95EA}.Debug|x64.Build.0 = Debug|x64
+		{205F4257-D442-4EC6-A464-B13C8C5F95EA}.Debug|x86.ActiveCfg = Debug|Win32
+		{205F4257-D442-4EC6-A464-B13C8C5F95EA}.Debug|x86.Build.0 = Debug|Win32
+		{205F4257-D442-4EC6-A464-B13C8C5F95EA}.Release|x64.ActiveCfg = Release|x64
+		{205F4257-D442-4EC6-A464-B13C8C5F95EA}.Release|x64.Build.0 = Release|x64
+		{205F4257-D442-4EC6-A464-B13C8C5F95EA}.Release|x86.ActiveCfg = Release|Win32
+		{205F4257-D442-4EC6-A464-B13C8C5F95EA}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {146BDDE2-C25F-4975-A69E-0B545461FFAF}
+	EndGlobalSection
+EndGlobal
