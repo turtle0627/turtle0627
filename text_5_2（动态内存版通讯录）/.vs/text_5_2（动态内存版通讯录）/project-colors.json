@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "8da47e32-5e39-49bf-b1df-175a2eade169": {
+      "ProjectGuid": "8da47e32-5e39-49bf-b1df-175a2eade169",
+      "DisplayName": "text_5_2（动态内存版通讯录）",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
