@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "text_5_4（文件版通讯录）", "text_5_4（文件版通讯录）\text_5_4（文件版通讯录）.vcxproj", "{DC72A38D-7375-40D9-BA8D-D3E6960E0784}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DC72A38D-7375-40D9-BA8D-D3E6960E0784}.Debug|x64.ActiveCfg = Debug|x64
+		{DC72A38D-7375-40D9-BA8D-D3E6960E0784}.Debug|x64.Build.0 = Debug|x64
+		{DC72A38D-7375-40D9-BA8D-D3E6960E0784}.Debug|x86.ActiveCfg = Debug|Win32
+		{DC72A38D-7375-40D9-BA8D-D3E6960E0784}.Debug|x86.Build.0 = Debug|Win32
+		{DC72A38D-7375-40D9-BA8D-D3E6960E0784}.Release|x64.ActiveCfg = Release|x64
+		{DC72A38D-7375-40D9-BA8D-D3E6960E0784}.Release|x64.Build.0 = Release|x64
+		{DC72A38D-7375-40D9-BA8D-D3E6960E0784}.Release|x86.ActiveCfg = Release|Win32
+		{DC72A38D-7375-40D9-BA8D-D3E6960E0784}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BC788EA9-9328-4E66-963D-1FAD67A70CF0}
+	EndGlobalSection
+EndGlobal

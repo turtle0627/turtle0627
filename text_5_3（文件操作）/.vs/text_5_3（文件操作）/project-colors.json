@@ -5,6 +5,11 @@
       "ProjectGuid": "383e7794-dedb-4533-a5e7-f29f8a4b5c1e",
       "DisplayName": "text_5_3（文件操作）",
       "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "杂项文件",
+      "ColorIndex": -1
     }
   },
   "NextColorIndex": 1
