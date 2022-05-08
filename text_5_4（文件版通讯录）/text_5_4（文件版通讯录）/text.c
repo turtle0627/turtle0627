@@ -23,7 +23,7 @@ void menu()
 	printf("****** 1. add          2. del    ******\n");
 	printf("****** 3. search       4. modify ******\n");
 	printf("****** 5. show         6. sort   ******\n");
-	printf("****** 0. exit                   ******\n");
+	printf("****** 7. save         0. exit   ******\n");
 	printf("***************************************\n");
 }
 
@@ -63,8 +63,13 @@ int main()
 			SortContact(&con);
 			break;
 		case EXIT:
+			SaveContact(&con);
 			DsetoryContact(&con);
 			printf("退出通讯录\n");
+			break;
+		case SAVE:
+			SaveContact(&con);
+			printf("保存成功\n");
 			break;
 		default:
 			printf("选择错误\n");

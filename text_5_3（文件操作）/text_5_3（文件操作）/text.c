@@ -175,30 +175,142 @@
 //	return 0;
 //}
 
-struct S
-{
-	char name[20];
-	int age;
-	double score;
-};
+//struct S
+//{
+//	char name[20];
+//	int age;
+//	double score;
+//};
+//
+//int main()
+//{
+//	struct S s = { "张三",20,55.6 };
+//	FILE* pf = fopen("test.txt", "wb");
+//	if (pf == NULL)
+//	{
+//		return 0;
+//	}
+//	//二进制的形式写文件
+//	fwrite(&s, sizeof(struct S), 1, pf);
+//
+//	fclose(pf);
+//	pf = NULL;
+//}
+
+
+//struct S
+//{
+//	char name[20];
+//	int age;
+//	double score;
+//};
+//
+//int main()
+//{
+//	//struct S s = { "张三",20,55.6 };
+//	struct S tmp = { 0 };
+//	FILE* pf = fopen("test.txt", "rb");
+//	if (pf == NULL)
+//	{
+//		return 0;
+//	}
+//	//二进制的形式读文件
+//	fread(&tmp, sizeof(struct S), 1, pf);
+//	printf("%s %d %lf\n", tmp.name, tmp.age, tmp.score);
+//
+//	fclose(pf);
+//	pf = NULL;
+//}
+
+//假设文件内是abcdef
+//int main()
+//{
+//	FILE* pf = fopen("text.txt", "r");
+//	if (pf == NULL)
+//	{
+//		return 0;
+//	}
+//	//定位文件指针
+//	//fseek(pf, 2, SEEK_CUR);//从开头偏移2位
+//
+//	fseek(pf, -2, SEEK_END);//从结尾偏移2位
+//	
+//	int pos = ftell(pf);//返回值是偏移量
+//	//假设这里使用fgetc（pf）偏移量会再+1
+//	printf("%d\n", pos);//输出4
+//	//读取文件
+//	int ch = fgetc(pf);
+//	printf("%c\n", ch);//输出c
+//
+//	rewind(pf);//返回起始位置
+//
+//	fclose(pf);
+//	pf = NULL;
+//}
+
+//int main()//EOF是-1
+//{
+//	//假设打开一个空文件
+//	FILE* pf = fopen("test.txt", "r");
+//	if (pf == NULL)
+//	{
+//		return 0;
+//	}
+//	int ch = fgetc(pf);
+//	printf("%d\n", ch);
+//
+//	fclose(pf);
+//	pf = NULL;
+//	return 0;
+//}
+
+
+//int main()
+//{
+//	//strerror - 把错误码对应的错误信息的字符串地址返回
+//	pritnf("%s\n", strerror(errno));
+//	
+//	//perror
+//	FILE* pf = fopen("test2.txt", "r");
+//	if (pf == NULL)
+//	{
+//		perror("hehe");
+//		return 0;
+//	}
+//	//读文件
+//
+//	fclose(pf);
+//	pf = NULL;
+//	return 0;
+//}
+
 
 int main()
 {
-	struct S s = { "张三",20,55.6 };
-	FILE* pf = fopen("test.txt", "wb");
+	//假设打开一个空文件
+	FILE* pf = fopen("test.txt", "r");
 	if (pf == NULL)
 	{
+		perror("open file test2.txt");
 		return 0;
 	}
-	//二进制的形式写文件
-	fwrite(&s, sizeof(struct S), 1, pf);
-
+	int ch = 0;
+	while ((ch = fgets(pf)) != EOF)
+	{
+		putchar(ch);
+	}
+	if (ferror(pf))
+	{
+		printf("error\n");
+	}
+	else if (feof(pf))
+	{
+		printf("end of file\n");
+	}
 	fclose(pf);
 	pf = NULL;
+
+	return 0;
 }
-
-
-
-
 
 

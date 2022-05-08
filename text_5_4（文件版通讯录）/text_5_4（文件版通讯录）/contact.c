@@ -10,6 +10,32 @@ void InitContact(struct Contact* ps)
 	}
 	ps->size = 0;
 	ps->capacity = DEFAULT_SZ;
+	//把文件中已经存放的通讯录信息加载到通讯录中
+	LoadContact(ps);
+}
+
+//声明函数
+void CheckCapacity(Contact* ps);
+
+void LoadContact(Contact* ps)
+{
+	PeoInfo tmp = { 0 };
+	FILE* pfRead = fopen("contact.txt", "rb");
+	if (pfRead == NULL)
+	{
+		printf(" LoadContact:%s\n", strerror(errno));
+		return;
+	}
+	//读取文件存放到通讯录中
+	while (fread(&tmp, sizeof(PeoInfo), 1, pfRead))
+	{
+		CheckCapacity(ps);
+		ps->data[ps->size] = tmp;
+		ps->size++;
+	}
+
+	fclose(pfRead);
+	pfRead = NULL;
 }
 
 void CheckCapacity(struct Contact* ps)
@@ -162,4 +188,23 @@ void DsetoryContact(Contact* ps)
 void SortContact(struct Contact* ps)
 {
 	;
+}
+
+void SaveContact(Contact* ps)
+{
+	FILE* pfWrite = fopen("contact.txt", "wb");
+	if (pfWrite == NULL)
+	{
+		printf("SaveContact:%s\n", strerror(errno));
+		return;
+	}
+	//写通讯录的数据到文件中
+	int i = 0;
+	for (i = 0; i < ps->size; i++)
+	{
+		fwrite(&(ps->data[i]), sizeof(PeoInfo), 1, pfWrite);
+	}
+
+	fclose(pfWrite);
+	pfWrite = NULL;
 }

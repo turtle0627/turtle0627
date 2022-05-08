@@ -1,7 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 //#define MAX 1000
 #define DEFAULT_SZ 3
-#define MAX_NAME 5
+#define MAX_NAME 8
 #define MAX_AGE 3
 #define MAX_SEX 5
 #define MAX_TELE 12
@@ -10,6 +10,7 @@
 #include <stdio.h>
 #include<string.h>
 #include<stdlib.h>
+#include<errno.h>
 
 enum Option
 {
@@ -19,7 +20,8 @@ enum Option
 	SEARCH, //3
 	MODIFY, //4
 	SHOW,   //5
-	SORT    //6
+	SORT,   //6
+	SAVE
 };
 
 typedef struct PeoInfo
@@ -54,4 +56,9 @@ void ModifyContact(struct Contact* ps);
 
 void SortContact(struct Contact* ps);
 
+void SaveContact(Contact* ps);
+
 void DsetoryContact(Contact* ps);
+
+//加载文件中的信息到通讯录
+void LoadContact(Contact* ps);

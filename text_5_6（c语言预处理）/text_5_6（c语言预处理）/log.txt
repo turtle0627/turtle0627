@@ -1,0 +1,10 @@
+file:D:\bc\text_5_6（c语言预处理）\text_5_6（c语言预处理）\text.c line:42 data:May  7 2022 time:17:37:16 i=0
+file:D:\bc\text_5_6（c语言预处理）\text_5_6（c语言预处理）\text.c line:42 data:May  7 2022 time:17:37:16 i=1
+file:D:\bc\text_5_6（c语言预处理）\text_5_6（c语言预处理）\text.c line:42 data:May  7 2022 time:17:37:16 i=2
+file:D:\bc\text_5_6（c语言预处理）\text_5_6（c语言预处理）\text.c line:42 data:May  7 2022 time:17:37:16 i=3
+file:D:\bc\text_5_6（c语言预处理）\text_5_6（c语言预处理）\text.c line:42 data:May  7 2022 time:17:37:16 i=4
+file:D:\bc\text_5_6（c语言预处理）\text_5_6（c语言预处理）\text.c line:42 data:May  7 2022 time:17:37:16 i=5
+file:D:\bc\text_5_6（c语言预处理）\text_5_6（c语言预处理）\text.c line:42 data:May  7 2022 time:17:37:16 i=6
+file:D:\bc\text_5_6（c语言预处理）\text_5_6（c语言预处理）\text.c line:42 data:May  7 2022 time:17:37:16 i=7
+file:D:\bc\text_5_6（c语言预处理）\text_5_6（c语言预处理）\text.c line:42 data:May  7 2022 time:17:37:16 i=8
+file:D:\bc\text_5_6（c语言预处理）\text_5_6（c语言预处理）\text.c line:42 data:May  7 2022 time:17:37:16 i=9

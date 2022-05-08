@@ -1,1 +1,4 @@
-﻿LINK : fatal error LNK1168: 无法打开 D:\bc\text_5_3（文件操作）\x64\Debug\text_5_3（文件操作）.exe 进行写入
+﻿  text.c
+D:\bc\text_5_3（文件操作）\text_5_3（文件操作）\text.c(239,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“FILE *”
+D:\bc\text_5_3（文件操作）\text_5_3（文件操作）\text.c(239,9): warning C4313: “printf”: 格式字符串中的“%d”与“FILE *”类型的参数 1 冲突
+  text_5_3（文件操作）.vcxproj -> D:\bc\text_5_3（文件操作）\x64\Debug\text_5_3（文件操作）.exe
