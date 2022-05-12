@@ -168,29 +168,122 @@
 //}
 
 //宏和函数的对比
-int MAX(int x, int y)
-{
-	return (X > Y ? X : Y);
-}
-//函数调用和返回开销（需要做准备）
+//int MAX(int x, int y)
+//{
+//	return (X > Y ? X : Y);
+//}
+////函数调用和返回开销（需要做准备）
+//
+//#define MAX(X,Y) ((X)>(Y)?(X):(Y))
+////预处理阶段完成了替换
+//
+//int main()
+//{
+//	int a = 10;
+//	int b = 20;
+//	float c = 3.0f;
+//	float d = 4.0f;
+//
+//	//int max = MAX(a, b);
+//	//
+//	//max = MAX(a, b);
+//
+//	int max = MAX(c, d);//报错 int 到 float
+//
+//	max = MAX(c, d);
+//	
+//	return 0;
+//}
 
-#define MAX(X,Y) ((X)>(Y)?(X):(Y))
-//预处理阶段完成了替换
+//宏和函数有点结合体 inline 内联函数
+
+//#define DEBUG
+//int main()
+//{
+//	int arr[10] = { 1,2,3,4,5,6,7,8,9,10 };
+//	int i = 0;
+//	for (i = 0; i < 10;i++)
+//	{
+//		arr[i] = 0;
+//#ifdef DEBUG
+//		printf("%d ", arr[i]);
+//#endif
+//
+//#ifndef DEBUG
+//		printf("%d ",arr[i]);
+//#endif 
+// 
+//		//如DEBUG定义了 则运行内容 否则屏蔽
+//	}
+//	return 0;
+//}
+
+//#if #endif
+//int main()
+//{
+//	int arr[10] = { 1,2,3,4,5,6,7,8,9,10 };
+//	int i = 0;
+//	for (i = 0; i < 10;i++)
+//	{
+//		arr[i] = 0;
+//#if 1-1//为真运行为假则不参与编译
+//		printf("%d ", arr[i]);
+//#endif
+//	}
+//	return 0;
+//}
+
+//#if #elif
+//int main()
+//{
+//#if 1==1
+//	printf("haha\n");
+//#elif 2==1
+//	printf("hehe\n");
+//#else
+//	printf("嘿嘿\n");
+//#endif
+//
+//	return 0;
+//}
+
+//int main()
+//{
+//#if defined(DEBUG)
+//	printf("hehe\n");
+//#endif 
+//
+//#if !defined(DEBUG)
+//	printf("hehe\n");
+//#endif
+//
+//	return 0;
+//}
+
+//#pragma once
+
+//offsetof实现
+//请编写宏 ，计算结构体某变量对首地址的偏移，并给出说明
+#include<stddef.h>
+
+struct S
+{
+	char c1;
+	int a;
+	char c2;
+};
+
+#define 
 
 int main()
 {
-	int a = 10;
-	int b = 20;
-	float c = 3.0f;
-	float d = 4.0f;
+	//struct S s;
+	//printf("%d\n", offestof(struct S c1));
+	//printf("%d\n", offestof(struct S a));
+	//printf("%d\n", offestof(struct S c2));
 
-	//int max = MAX(a, b);
-	//
-	//max = MAX(a, b);
-
-	int max = MAX(c, d);//报错 int 到 float
-
-	max = MAX(c, d);
-	
+	printf("%d\n", Offestof(struct S c1));
+	printf("%d\n", Offestof(struct S a));
+	printf("%d\n", Offestof(struct S c2));
 	return 0;
 }
