@@ -1,6 +1,11 @@
 #define _CRT_SECUre_NO_WARNINGS
 #include"SeqList.h"
 
+void menu()
+{
+	;
+}
+
 void TestSeqList1()
 {
 	SL s1;
@@ -22,6 +27,7 @@ void TestSeqList1()
 
 int main()
 {
+	menu();
 	TestSeqList1();
 	return 0;
 }

@@ -28,10 +28,16 @@ void SeqListCheckCapacity(SL* ps);
 //N给小了不够用，给打了浪费
 //因此使用动态的
 
-void SeqListPushBack(SL* ps, SLDataType x);  //尾插
+void SeqListPushBack(SL* ps, SLDataType x);        //尾插
 
-void SeqListPopBack(SL* ps);                 //尾删
+void SeqListPopBack(SL* ps);                       //尾删
 
-void SeqListPushFront(SL* ps, SLDataType x); //头插
+void SeqListPushFront(SL* ps, SLDataType x);       //头插
 
-void SeqListPopFront(SL* ps);               //头删
+void SeqListPopFront(SL* ps);                      //头删
+
+void SeqListFind(SL* ps,SLDataType x);             //寻找
+
+void SeqListInsert(SL* ps, int pos, SLDataType x); //选位插入
+
+void SeqListErase(SL* ps, int pos, SLDataType x);  //选位删除
