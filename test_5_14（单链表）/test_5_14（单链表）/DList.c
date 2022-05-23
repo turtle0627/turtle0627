@@ -82,7 +82,7 @@ void ListPopFront(DLTNode* phead)
 	free(next);
 }
 
-DLTNode* ListFine(DLTNode* phead, DLTDataType x)
+DLTNode* ListFind(DLTNode* phead, DLTDataType x)
 {
 	assert(phead);
 	DLTNode* cur = phead->next;
@@ -112,4 +112,23 @@ void ListInsert(DLTNode* pos, DLTDataType x)//在pos之前插入
 void ListErase(DLTNode* pos)//在pos之后删除
 {
 	assert(pos);
+	DLTNode* posprev = pos->prev;
+	DLTNode* posnext = pos->next;
+
+	posprev->next = pos->next;
+	posnext->prev = pos->prev;
+	free(pos);
+	pos = NULL;
+}
+
+void ListDestroy(DLTNode* phead)
+{
+	assert(phead);
+	DLTNode* cur = phead->next;
+	while (cur != phead)
+	{
+		DLTNode* next = cur->next;
+		free(cur);
+		cur = next;
+	}
 }

@@ -104,6 +104,16 @@ void TestList1()
 
 	ListInsert(plist, 4);
 	ListPrint(plist);
+
+	DLTNode* pos = ListFind(plist, 2);
+	if (pos)
+	{
+		ListErase(pos);
+	}
+	ListPrint(plist);
+
+	ListDestroy(plist);
+	plist = NULL;
 }
 
 int main()

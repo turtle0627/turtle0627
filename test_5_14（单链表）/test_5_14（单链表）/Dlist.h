@@ -25,10 +25,11 @@ void ListPushFront(DLTNode* phead, DLTDataType x);
 
 void ListPopFront(DLTNode* phead);
 
-DLTNode* ListFine(DLTNode* phead, DLTDataType x);
+DLTNode* ListFind(DLTNode* phead, DLTDataType x);
 
 void ListInsert(DLTNode* pos, DLTDataType x);
 
 void ListErase(DLTNode* pos);
 
+void ListDestroy(DLTNode* phead);
 
